@@ -1,0 +1,159 @@
+.fila {
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    border: 2px solid coral;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+
+    /* Se utiliza para ajstar columnas x */
+    /* justify-content: space-around; */
+
+    /* Se ulitiza para columnas y */
+    /* align-items: center; */
+
+
+}
+
+.fila .cont-btn {
+    width: 50%;
+    height: 84%;
+    background: coral;
+    text-align: center;
+    padding: 48px 30px;
+    
+}
+
+.fila .cont-btn h2 {
+    color: white;
+    font-size: 50px;
+}
+
+.fila .cont-btn button {
+    padding: 8px 15px;
+    font-size: 22px;
+    border: 2px solid white;
+    margin: 10px 14px;
+    background: rgb(209, 132, 104);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fila .cont-fig {
+    width: 50%;
+    height: 92%;
+    background: gray;
+    text-align: center;
+    padding-top: 48px;
+
+}
+
+.fila .cont-fig h2 {
+    text-align: center;
+    color: rgb(209, 132, 104) ;
+    font-size: 50px;
+}
+
+.fila .cont-fig #figura {
+    width: 200px;
+    height: 200px;
+    background: rgb(75, 61, 61);
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.menu {
+    padding: 8px 20px;
+    background: #f0ad4e;
+    color: white;
+    position: absolute;
+    right: 300px;
+    bottom: 150px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+/* estilos de la figura  al dar clik a los botones */
+
+#figura.circulo {
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+#figura.arriba {
+    transform: translatey(-48PX);
+    
+}
+
+#figura.abajo {
+    transform: translatey(80PX);
+    
+}
+
+#figura.izquierda {
+    transform: translatex(-80PX);
+   
+}
+
+#figura.derecha {
+    transform: translatex(80PX);
+}
+
+.fila .cont-fig #figura.triangulo {
+    text-align: center;
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #f0ad4e;
+}
+
+.fila .cont-fig #figura.diagonali {
+    transform: translate(-100px, -50px);
+
+}
+
+.fila .cont-fig #figura.diagonald {
+    transform: translate(100px, 50px);
+
+}
+
+.fila .cont-fig #figura.imagen {
+    background-image: url(../img/img2.jpg);
+}
+
+
+.fila .cont-fig #figura.rombo {
+width: 100px; 
+height: 100px; 
+border: 3px solid #555; 
+background: #428bca;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+
+}
+
+.fila .cont-fig #figura.rectangulov {
+width: 250px; 
+height: 100px; 
+border: 3px solid #555;
+background: #428bca;
+}
+
+.fila .cont-fig #figura.rectanguloh {
+    text-align: center;
+    transform: rotate(90deg);
+    width: 250px; 
+    height: 100px; 
+    border: 3px solid #555;
+    background: #428bca;
+    }
